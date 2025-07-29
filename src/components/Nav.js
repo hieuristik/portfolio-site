@@ -1,35 +1,46 @@
 "use client";
-import { usePathname } from "next/navigation";
+
+import '../app/navStyles.css';
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
 let NAV_LINKS = [
-    {
-        label: "About",
-        href: "/about"
-    },
-    {
-        label: "Work",
-        href: "/work"
-    }
-]
+    { label: "About", href: "/about" },
+    { label: "Work", href: "/work" },
+];
 
 export default function Nav() {
     const pathname = usePathname();
+    const router = useRouter();
 
     return (
-        <nav>
-            <ul>
-                {pathname !== "/" && (
-                    <li>
-                        <Link href="/">BACK</Link>
-                    </li>
-                )}
-                {NAV_LINKS.map((link) => (
-                    <li key={link.href}>
-                        <Link href={link.href}>{link.label}</Link>
-                    </li>
-                ))}
-            </ul>
-        </nav>
+        <>
+            {pathname !== "/" && (
+                <button
+                    onClick={() => router.push("/")}
+                    className="back-btn z-[9999]"
+                    type="button"
+                >
+                    Back
+                </button>
+            )}
+            <nav className="navbar z-[9999]">
+                <ul className="navbar-list">
+                    {NAV_LINKS.map((link) => {
+                        const isActive = pathname === link.href;
+                        return (
+                            <li key={link.href}>
+                                <Link
+                                    href={link.href}
+                                    className={isActive ? "nav-link nav-link-active" : "nav-link"}
+                                >
+                                    {link.label}
+                                </Link>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </nav>
+        </>
     );
 }
