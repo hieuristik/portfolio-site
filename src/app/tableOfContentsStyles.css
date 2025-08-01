@@ -1,0 +1,8 @@
+.table-of-contents-container {
+    margin-left: auto;
+    width: 200px;
+    padding: 1rem 1.5rem;
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
