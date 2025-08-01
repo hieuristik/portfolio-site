@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <main className="pt-24 px-6"> /* Tailwind utility to push main body below Nav */
+        <main className="pt-24 px-6">
           {children}
         </main>
       </body>
