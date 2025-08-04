@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* Basic h1 template with Helvetica font */
+h1 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 2rem; /* 40px - good readable size */
+  font-weight: 600;
+  line-height: 1.2;
+  /* margin-bottom: 1rem; */
+  color: #1a1a1a; /* Dark gray for good contrast */
+}
+
