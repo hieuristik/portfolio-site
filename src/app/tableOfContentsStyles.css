@@ -1,6 +1,8 @@
 /* Table of Contents Container */
 .table-of-contents-container {
-    margin-left: auto;
+    position: fixed;
+    top: 6rem;
+    right: 2rem;
     width: 280px;
     padding: 1.5rem;
     background: rgba(255, 255, 255, 0.95);
@@ -8,10 +10,9 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     border: 1px solid rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(10px);
-    position: sticky;
-    top: 2rem;
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 8rem);
     overflow-y: auto;
+    z-index: 40;
 }
 
 /* Title Styling */
@@ -117,15 +118,18 @@
     .table-of-contents-container {
         width: 240px;
         padding: 1.25rem;
+        right: 1rem;
     }
 }
 
 @media (max-width: 768px) {
     .table-of-contents-container {
+        position: static;
         width: 100%;
         margin: 1rem 0;
-        position: static;
         max-height: none;
+        right: auto;
+        top: auto;
     }
     
     .table-of-contents-container h2 {
