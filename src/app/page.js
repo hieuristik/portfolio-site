@@ -1,6 +1,7 @@
 import SocialButtons from "@/components/SocialButtons";
 import TableOfContents from "@/components/TableOfContents";
 import EmailCopyToClipboard from "@/components/EmailCopyToClipboard";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +25,8 @@ export default function Home() {
         </div>
       </div>
       <TableOfContents />
+      <br></br>
+      <Footer />
     </div>
   );
 }
