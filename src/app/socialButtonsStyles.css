@@ -1,0 +1,113 @@
+/* Social Buttons Container */
+.social-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+/* Individual Social Button */
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effects */
+.social-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.social-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* LinkedIn Specific Styling */
+.social-button.linkedin {
+  background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+}
+
+.social-button.linkedin:hover {
+  background: linear-gradient(135deg, #005885 0%, #0077b5 100%);
+  box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
+}
+
+/* GitHub Specific Styling */
+.social-button.github {
+  background: linear-gradient(135deg, #333 0%, #24292e 100%);
+  box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3);
+}
+
+.social-button.github:hover {
+  background: linear-gradient(135deg, #24292e 0%, #333 100%);
+  box-shadow: 0 8px 25px rgba(51, 51, 51, 0.4);
+}
+
+/* Icon Styling (for when you add icons) */
+.social-button svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.social-button:hover svg {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-buttons-container {
+    gap: 0.75rem;
+    justify-content: center;
+  }
+  
+  .social-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Alternative Light Theme */
+.social-button.light {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #495057;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
+}
+
+.social-button.light:hover {
+  background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  color: #212529;
+}
+
+/* Glassmorphism Alternative */
+.social-button.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-button.glass:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
