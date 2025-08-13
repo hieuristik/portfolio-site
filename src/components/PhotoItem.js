@@ -1,19 +1,15 @@
-// PhotoItem.jsx
-import Image from "next/image";
+import React from 'react';
 
-export default function PhotoItem({ src, alt = "", onClick }) {
+const PhotoItem = ({ src }) => {
   return (
-    <div
-      onClick={onClick}
-      className="w-full h-full flex justify-center items-center cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
-    >
-      <Image
+    <div className="w-full h-[500px]">
+      <img
         src={src}
-        alt={alt}
-        width={1000}
-        height={600}
-        className="rounded-2xl shadow-xl object-contain max-h-[80vh] w-full"
+        alt="Gallery Item"
+        className="w-full h-full object-cover rounded-xl"
       />
     </div>
   );
-}
+};
+
+export default PhotoItem;
