@@ -16,15 +16,15 @@ const PhotoGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNext = () => {
-    if (currentIndex < images.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   return (
@@ -33,10 +33,7 @@ const PhotoGallery = () => {
       {/* Left Arrow */}
       <button
         onClick={handlePrev}
-        disabled={currentIndex === 0}
-        className={`p-3 rounded-full shadow-md bg-white hover:bg-gray-100 transition ${
-          currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''
-        }`}
+        className="p-3 rounded-full shadow-md bg-white hover:bg-gray-100 transition"
         style={{ marginRight: '1rem' }}
       >
         <ArrowLeft className="text-gray-800" />
@@ -50,10 +47,7 @@ const PhotoGallery = () => {
       {/* Right Arrow */}
       <button
         onClick={handleNext}
-        disabled={currentIndex === images.length - 1}
-        className={`p-3 rounded-full shadow-md bg-white hover:bg-gray-100 transition ${
-          currentIndex === images.length - 1 ? 'opacity-50 cursor-not-allowed' : ''
-        }`}
+        className="p-3 rounded-full shadow-md bg-white hover:bg-gray-100 transition"
         style={{ marginLeft: '1rem' }}
       >
         <ArrowRight className="text-gray-800" />
