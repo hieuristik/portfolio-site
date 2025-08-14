@@ -4,12 +4,18 @@ import React, { useState } from 'react';
 import PhotoItem from './PhotoItem';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
-const images = [
-  '/images/gallery/01.jpg',
-  '/images/gallery/02.jpg',
-  '/images/gallery/03.jpg',
-  '/images/gallery/04.jpg',
-  '/images/gallery/05.jpg'
+const photos = [
+  {
+    src: '/images/gallery/01.jpg',
+    url: 'https://cdn.example.com/full/01.jpg',
+    alt: 'Sunset on the beach'
+  },
+  {
+    src: '/images/gallery/02.jpg',
+    url: 'https://cdn.example.com/full/02.jpg',
+    alt: 'Snowy cabin'
+  },
+  // Add more photo objects as needed
 ];
 
 const PhotoGallery = () => {
@@ -17,13 +23,13 @@ const PhotoGallery = () => {
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? photos.length - 1 : prevIndex - 1
     );
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === photos.length - 1 ? 0 : prevIndex + 1
     );
   };
 
@@ -45,9 +51,9 @@ const PhotoGallery = () => {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {images.map((src, idx) => (
+          {photos.map((photo, idx) => (
             <div key={idx} className="min-w-full h-full flex-shrink-0">
-              <PhotoItem src={src} />
+              <PhotoItem photo={photo} />
             </div>
           ))}
         </div>

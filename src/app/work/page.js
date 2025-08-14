@@ -4,7 +4,7 @@ import ProjectGrid from "@/components/ProjectGrid";
 
 const DEV_PROJECTS = [
     {
-      title: "Brewin Language Interpreter",
+      title: "Brewin Language Interpreter1",
       description:
         "A small interpreted, statically typed language in Python with I/O, objects, scoping, and error handling.",
       imageSrc: "/images/brewin-card.jpg",
@@ -14,7 +14,7 @@ const DEV_PROJECTS = [
       tags: ["Python", "Interpreter", "Compilers"],
     },
     {
-      title: "Brewin Language Interpreter",
+      title: "Brewin Language Interpreter2",
       description:
         "A small interpreted, statically typed language in Python with I/O, objects, scoping, and error handling.",
       imageSrc: "/images/brewin-card.jpg",
@@ -24,7 +24,7 @@ const DEV_PROJECTS = [
       tags: ["Python", "Interpreter", "Compilers"],
     },
     {
-      title: "Brewin Language Interpreter",
+      title: "Brewin Language Interpreter3",
       description:
         "A small interpreted, statically typed language in Python with I/O, objects, scoping, and error handling.",
       imageSrc: "/images/brewin-card.jpg",
@@ -34,7 +34,7 @@ const DEV_PROJECTS = [
       tags: ["Python", "Interpreter", "Compilers"],
     },
     {
-      title: "Brewin Language Interpreter",
+      title: "Brewin Language Interpreter4",
       description:
         "A small interpreted, statically typed language in Python with I/O, objects, scoping, and error handling.",
       imageSrc: "/images/brewin-card.jpg",
@@ -44,7 +44,7 @@ const DEV_PROJECTS = [
       tags: ["Python", "Interpreter", "Compilers"],
     },
     {
-      title: "Brewin Language Interpreter",
+      title: "Brewin Language Interpreter5",
       description:
         "A small interpreted, statically typed language in Python with I/O, objects, scoping, and error handling.",
       imageSrc: "/images/brewin-card.jpg",

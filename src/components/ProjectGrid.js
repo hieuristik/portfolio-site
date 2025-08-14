@@ -22,9 +22,10 @@ export default function ProjectGrid({
         <h2 className="mb-6 text-3xl font-bold tracking-tight">{title}</h2>
       )}
 
-      <div className="grid items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {visible.map((p) => (
-          <ProjectCard key={p.githubUrl || p.title} {...p} />
+      {/* FIXED: use `visible` instead of `projects` */}
+      <div className="flex flex-wrap justify-center gap-6">
+        {visible.map((project) => (
+          <ProjectCard key={project.title} {...project} />
         ))}
       </div>
 
