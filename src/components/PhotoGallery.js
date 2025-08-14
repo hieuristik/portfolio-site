@@ -3,33 +3,20 @@
 import React, { useState } from 'react';
 import PhotoItem from './PhotoItem';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-
-const photos = [
-  {
-    src: '/images/gallery/01.jpg',
-    url: 'https://cdn.example.com/full/01.jpg',
-    alt: 'Sunset on the beach'
-  },
-  {
-    src: '/images/gallery/02.jpg',
-    url: 'https://cdn.example.com/full/02.jpg',
-    alt: 'Snowy cabin'
-  },
-  // Add more photo objects as needed
-];
+import PHOTOS from '@/data/photosList';
 
 const PhotoGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? photos.length - 1 : prevIndex - 1
+      prevIndex === 0 ? PHOTOS.length - 1 : prevIndex - 1
     );
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === photos.length - 1 ? 0 : prevIndex + 1
+      prevIndex === PHOTOS.length - 1 ? 0 : prevIndex + 1
     );
   };
 
@@ -51,7 +38,7 @@ const PhotoGallery = () => {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {photos.map((photo, idx) => (
+          {PHOTOS.map((photo, idx) => (
             <div key={idx} className="min-w-full h-full flex-shrink-0">
               <PhotoItem photo={photo} />
             </div>

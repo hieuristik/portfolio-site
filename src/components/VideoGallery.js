@@ -2,31 +2,17 @@
 import React, { useState } from "react";
 import { ArrowUp, ArrowDown } from "lucide-react";
 import VideoItem from "./VideoItem";
-
-const videos = [
-  {
-    src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    title: "Intro to BrewinLang",
-  },
-  {
-    src: "https://www.youtube.com/embed/5NV6Rdv1a3I",
-    title: "Behind the Code",
-  },
-  {
-    src: "https://www.youtube.com/embed/3JZ_D3ELwOQ",
-    title: "Project Showcase Reel",
-  },
-];
+import VIDEOS from "@/data/videosList";
 
 export default function VideoGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
+    setCurrentIndex((prev) => (prev === 0 ? VIDEOS.length - 1 : prev - 1));
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
+    setCurrentIndex((prev) => (prev === VIDEOS.length - 1 ? 0 : prev + 1));
   };
 
   return (
@@ -39,8 +25,8 @@ export default function VideoGallery() {
       </button>
 
       <VideoItem
-        src={videos[currentIndex].src}
-        title={videos[currentIndex].title}
+        src={VIDEOS[currentIndex].src}
+        title={VIDEOS[currentIndex].title}
       />
 
       <button
