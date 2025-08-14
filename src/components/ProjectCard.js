@@ -15,11 +15,11 @@ export default function ProjectCard({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Open ${title} on GitHub`}
-      className="group block h-full"
+      className="group block h-full w-full"
     >
       <article
         className="
-          h-full max-w-[360px] w-full rounded-2xl overflow-hidden
+          h-full w-full rounded-2xl overflow-hidden
           ring-1 ring-black/5 bg-white
           shadow-sm transition-all duration-300
           hover:shadow-xl hover:-translate-y-1

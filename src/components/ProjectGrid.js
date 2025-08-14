@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectGrid({
   projects = [],
-  collapsedCount = 3,
+  collapsedCount = 2,
   title,
 }) {
   const [expanded, setExpanded] = useState(false);
@@ -17,13 +17,13 @@ export default function ProjectGrid({
   const hasMore = projects.length > collapsedCount;
 
   return (
-    <section className="mx-auto max-w-7xl px-6">
+    <section className="mx-auto max-w-5xl px-6">
       {title && (
         <h2 className="mb-6 text-3xl font-bold tracking-tight">{title}</h2>
       )}
 
-      {/* FIXED: use `visible` instead of `projects` */}
-      <div className="flex flex-wrap justify-center gap-6">
+      {/* Force 2 columns always on sm and up */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {visible.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
@@ -43,7 +43,9 @@ export default function ProjectGrid({
             aria-expanded={expanded}
             aria-controls="project-grid"
           >
-            {expanded ? "SHOW LESS" : `SHOW MORE (${projects.length - collapsedCount})`}
+            {expanded
+              ? "SHOW LESS"
+              : `SHOW MORE (${projects.length - collapsedCount})`}
           </button>
         </div>
       )}
