@@ -10,25 +10,25 @@ export default function Home() {
         <div className="main-content space-y-4 max-w-4xl">
 
           <h1 id="welcome-to-my-digital-space">WELCOME TO MY DIGITAL SPACE</h1>
-          <p>I’m Andrew, a Vietnamese-American software engineer with a background in data engineering and a growing obsession with developer tooling and backend infrastructure.</p>
-          <p>After graduating from UC Irvine with a B.S. in Computer Science, I moved to Ho Chi Minh City to immerse myself in a new environment and pursue meaningful work in tech. This site is part portfolio, part personal archive, and part sandbox for trying out ideas.</p>
+          <p>Hey, I’m glad you made it.</p>
+          <p>I’m <b>Andrew Le</b> — a Vietnamese-American software engineer-in-training with a background in data engineering and an ever-growing obsession with building inclusive, meaningful software.</p>
+          <p>After graduating from UC Irvine with a B.S. in Computer Science, I packed up and moved to Vietnam. It was part life reboot, part exploration of opportunities beyond the usual tech grind. This site? It’s a portfolio, a digital journal, and a playground for testing whatever weird idea I can't shake off.</p>
           <SocialButtons />
 
           <br /><h1 id="why-i-build">WHY I BUILD</h1>
-          <p>Most of the things I build start from a personal itch — something I wish existed, or something I wanted to understand better. Whether it’s automating a workflow, solving a niche problem, or learning a new framework, I treat code as a way of thinking.</p>
-          <p>I value clear logic, simplicity, and function-over-flash. I also enjoy writing internal tools and utilities that reduce friction for myself or others.</p>
-
-          <br /><h1 id="creative-interests">CREATIVE INTERESTS</h1>
-          <p>Outside of code, I spend time writing, playing acoustic fingerstyle guitar, and studying Vietnamese. These creative outlets keep me balanced and remind me that building — in any form — is both art and craft.</p>
-          <p>I'm also fascinated by how people learn and communicate. This often informs how I structure documentation, write UI copy, or teach concepts to others.</p>
-
+          <p>My fascination with technology began at home — watching my dad bring home what looked like piles of electronic junk and somehow, magically, breathe life back into them. Broken stereos, dusty desktops, forgotten gadgets — he’d fix them all, and I’d sit nearby, wide-eyed.</p>
+          <p>I built my first computer with him when I was barely tall enough to reach the table. Looking back, he was the spark — the reason I wandered into the world of Computer Science.</p>
+          <p>At heart, I’m a tinkerer. I love dismantling things, understanding how they work, and (hopefully) putting them back together better. There’s something beautiful in that messy, trial-and-error process — a space full of learning, surprise, and clarity.</p>
+          <p>When I was a kid and someone asked, “What do you want to be when you grow up?”, I’d say: “I just want to make people smile.” These days, I’d answer the same — but with more precision. I want to build things that help people. Especially those who’ve been overlooked, left out, or underestimated.</p>
+          
           <br /><h1 id="this-site-as-a-project">THIS SITE AS A PROJECT</h1>
-          <p>This site isn’t just a portfolio — it’s also a living project. I’m using it to experiment with frontend frameworks (like Next.js and Tailwind), integrate APIs, and improve UX patterns. Eventually, I plan to add blog posts, a newsletter archive, and a dynamic photo/video section.</p>
-          <p>Every piece here — from the design to the markdown parsing to the project grids — was built manually. No templates. No drag-and-drop builders.</p>
+          <p>This site isn’t just a portfolio — it’s alive. A work-in-progress, a testbed, a reflection of everything I’m learning and unlearning.</p>
+          <p>Everything you see here — from layout to component logic to markdown parsing — was built from scratch. No templates. No site builders. Just code, curiosity, and lots of coffee.</p>
 
-          <br /><h1 id="say-hello">SAY HELLO</h1>
-          <p>If you’ve made it this far, thanks for being here.</p>
-          <p>I’m always open to interesting projects, collaborations, or just casual conversation. Feel free to reach out on LinkedIn, check out my GitHub, or send me an email below.</p>
+          <br /><h1 id="lets-connect">LET'S CONNECT</h1>
+          <p>Thanks for stopping by — it genuinely means a lot.</p>
+          <p>I’m always open to collaboration, passion projects, or just good conversation. If something here resonates with you, don’t hesitate to reach out.</p>
+          <p>Shoot me an email or find me on LinkedIn. Let’s build something cool — or at least have a good chuckle trying.</p>
           <EmailCopyToClipboard />
         </div>
       </div>
