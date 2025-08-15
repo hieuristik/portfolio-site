@@ -1,4 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// next.config.mjs
+import withMDX from '@next/mdx' // import MDX plugin
+import remarkGfm from 'remark-gfm'
 
-export default nextConfig;
+const config = {
+  pageExtensions: ['js', 'jsx', 'mdx'],
+}
+
+export default withMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [remarkGfm],
+  },
+})(config)
