@@ -58,7 +58,9 @@ export default function Nav() {
 
       <nav
         className={`fixed top-6 left-1/2 -translate-x-1/2 z-[9999] transition-all duration-300 ${
-          showNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
+          showNav
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
       >
         <ul className="navbar-list flex gap-6 items-center bg-white px-6 py-2 rounded-full shadow-md">
@@ -69,9 +71,7 @@ export default function Nav() {
                 <Link
                   href={link.href}
                   className={
-                    isActive
-                      ? "nav-link nav-link-active"
-                      : "nav-link"
+                    isActive ? "nav-link nav-link-active" : "nav-link"
                   }
                 >
                   {link.label}
