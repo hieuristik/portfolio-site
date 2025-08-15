@@ -1,5 +1,7 @@
+import BLOG_DATA from "@/data/blogData";
+
 export default function BlogPage({ params }) {
-  const blog = blogData.find((b) => b.slug === params.slug);
+  const blog = BLOG_DATA.find((b) => b.slug === params.slug);
 
   if (!blog) return <div className="p-10">Blog not found</div>;
 
