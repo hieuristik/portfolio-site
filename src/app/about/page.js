@@ -1,3 +1,4 @@
+import DownloadButton from "@/components/DownloadButton";
 import Footer from "@/components/Footer";
 
 export default function About() {
@@ -39,6 +40,7 @@ export default function About() {
               <p>Lately, I’ve been diving deeper into AI frameworks and models, experimenting with LLMs and exploring how to build intelligent, accessible tools that serve real human needs. The blend of logic, empathy, and impact in AI keeps me hooked.</p>
             </div>
           </section>
+          <DownloadButton />
 
           {/* What's Next Section */}
           <section className="mt-20">
