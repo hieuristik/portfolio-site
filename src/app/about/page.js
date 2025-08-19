@@ -44,7 +44,7 @@ export default function About() {
 
           {/* What's Next Section */}
           <section className="mt-20">
-            <h1 id="whats-next" className="text-3xl font-bold text-center">WHAT'S NEXT?</h1>
+            <h1 id="whats-next" className="text-3xl font-bold text-center">WHAT IS NEXT?</h1>
             <p className="mt-4">{"You’ll just have to check back now and then to see what unfolds :)"}</p>
           </section>
 
