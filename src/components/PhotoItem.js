@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const PhotoItem = ({ photo }) => {
+export default function PhotoItem({ photo }) {
   return (
-    <div className="w-full h-full flex items-center justify-center overflow-hidden rounded-xl shadow-md">
+    <div className="w-full h-full flex items-center justify-center">
       <a
         href={photo.url}
         target="_blank"
@@ -10,13 +10,12 @@ const PhotoItem = ({ photo }) => {
         className="block w-full h-full"
       >
         <img
-          src={photo.src}
-          alt={photo.alt || 'Gallery Image'}
-          className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+          src={photo.src} // ensure leading slash if in /public: "/images/gallery/01.jpg"
+          alt={photo.alt || "Gallery Image"}
+          className="block mx-auto w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-500 ease-in-out hover:scale-105"
+          style={{ objectFit: "contain", objectPosition: "center" }} // defeats any global 'cover'
         />
       </a>
     </div>
   );
-};
-
-export default PhotoItem;
+}

@@ -1,15 +1,54 @@
 const PHOTOS = [
     {
-      src: 'images/gallery/01.jpg',
-      url: 'https://cdn.example.com/full/01.jpg',
-      alt: 'Sunset on the beach'
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
     },
     {
-      src: 'images/gallery/02.jpg',
-      url: 'https://cdn.example.com/full/02.jpg',
-      alt: 'Snowy cabin'
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
     },
-    // Add more photo objects as needed
+    {
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
+    },
+    {
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
+    },
+    {
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
+    },
+    {
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
+    },
+    {
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
+    },
+    {
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
+    },
+    {
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
+    },
+    {
+      src: '/images/gallery/01.png',
+      url: 'https://www.instagram.com/_dotlth/',
+      alt: 'Lake'
+    }
   ];
 
 export default PHOTOS;
