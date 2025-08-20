@@ -11,11 +11,11 @@ export default function About() {
           <h1 id="about-me" className="text-3xl font-bold">ABOUT ME</h1>
           
           {/* Intro Paragraphs */}
-          <p>{"Hi, I’m <b>Andrew Le</b> — Vietnamese-American by blood, California-born, Texas-raised. I thrive on curiosity, caffeine, and the quiet joy of learning something new."}</p>
+          <p>Hi, I&apos;m <strong>Andrew Le</strong> — Vietnamese-American by blood, California-born, Texas-raised. I thrive on curiosity, caffeine, and the quiet joy of learning something new.</p> 
           <p>{"I’m the kind of person who reads in the morning, plays guitar at night, and thinks about code somewhere in between. I find inspiration in a good photo, a well-written sentence, or a beautifully scored film. My passions stretch far and wide, but one thread ties them together: creation."}</p>
           <p>{"I’ve always been fascinated by technology — ever since I was a kid tinkering with discarded electronics, trying to figure out how things work (and occasionally how to fix them). That spirit never really left."}</p>
           <p>{"Moving to Vietnam wasn’t just a homecoming — it was an experiment in reinvention. I wanted to reconnect with my roots while challenging myself in new ways, beyond the traditional tech track."}</p>
-          <p>{"Though my degree is behind me, I still consider myself a student — of software, of systems, of people. Those who know me best might describe me as an old soul (a kind one, I hope — not a cranky one). And while I can’t confirm that myself, I’ll admit I do have a soft spot for The Beatles, The Smiths, and The Cure (all of the <i>The's</i>, now that I think about it)."}</p>
+          <p>Though my degree is behind me, I still consider myself a student — of software, of systems, of people. Those who know me best might describe me as an old soul (a kind one, I hope — not a cranky one). And while I can&apos;t confirm that myself, I&apos;ll admit I do have a soft spot for The Beatles, The Smiths, and The Cure (all of the <i>The&apos;s</i>, now that I think about it).</p>
 
           {/* Technical Focus Section */}
           <section className="mt-16">

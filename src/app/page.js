@@ -11,7 +11,7 @@ export default function Home() {
 
           <h1 id="welcome-to-my-digital-space">WELCOME TO MY DIGITAL SPACE</h1>
           <p>{"Hey, I’m glad you made it."}</p>
-          <p>{"I’m <b>Andrew Le</b> — a Vietnamese-American software engineer-in-training with a background in data engineering and an ever-growing obsession with building inclusive, meaningful software."}</p>
+          <p>I&apos;m <strong>Andrew Le</strong> — a Vietnamese-American software engineer-in-training with a background in data engineering and an ever-growing obsession with building inclusive, meaningful software.</p>
           <p>{"After graduating from UC Irvine with a B.S. in Computer Science, I packed up and moved to Vietnam. It was part life reboot, part exploration of opportunities beyond the usual tech grind. This site? It’s a portfolio, a digital journal, and a playground for testing whatever weird idea I can't shake off."}</p>
           <SocialButtons />
 
