@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="site-footer">
             <div className="footer-content">
-                <span>© 2025 Andrew Le. All rights reserved.</span>
+                <span>Andrew Le</span>
                 <SocialButtons />
             </div>
         </footer>

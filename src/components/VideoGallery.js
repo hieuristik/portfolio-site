@@ -1,6 +1,7 @@
 "use client";
+
 import React, { useState } from "react";
-import { ArrowUp, ArrowDown } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import VideoItem from "./VideoItem";
 import VIDEOS from "@/data/videosList";
 
@@ -16,24 +17,29 @@ export default function VideoGallery() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-4">
+    <div className="relative w-full max-w-5xl mx-auto flex items-center justify-center">
+      {/* Left Arrow */}
       <button
         onClick={handlePrev}
-        className="p-2 bg-white shadow-md rounded-full hover:bg-gray-100 transition"
+        className="p-3 rounded-full shadow-md bg-white hover:bg-gray-100 transition z-10 mr-4"
       >
-        <ArrowUp className="text-gray-800" />
+        <ArrowLeft className="text-gray-800" />
       </button>
 
-      <VideoItem
-        src={VIDEOS[currentIndex].src}
-        title={VIDEOS[currentIndex].title}
-      />
+      {/* Video container */}
+      <div className="w-full max-w-4xl flex justify-center items-center">
+        <VideoItem
+          src={VIDEOS[currentIndex].src}
+          title={VIDEOS[currentIndex].title}
+        />
+      </div>
 
+      {/* Right Arrow */}
       <button
         onClick={handleNext}
-        className="p-2 bg-white shadow-md rounded-full hover:bg-gray-100 transition"
+        className="p-3 rounded-full shadow-md bg-white hover:bg-gray-100 transition z-10 ml-4"
       >
-        <ArrowDown className="text-gray-800" />
+        <ArrowRight className="text-gray-800" />
       </button>
     </div>
   );
